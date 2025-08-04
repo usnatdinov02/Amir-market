@@ -1,0 +1,19 @@
+{
+  "name": "uzum-market-shop",
+  "version": "1.0.0",
+  "description": "Online shopping platform like Uzum Market with Alibaba-inspired design",
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["ecommerce", "online-shop", "uzum-market", "alibaba"],
+  "author": "Uzum Market Shop",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
